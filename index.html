@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Show do Charles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1> Rádio Charles </h1>
+
+  <div class="buttonstyle">
+    <button onclick="playVideo('https://www.youtube.com/embed/rAZMf4lsbFI')">
+      Surpresa 1
+    </button>
+
+    <button onclick="playVideo('https://www.youtube.com/embed/7FGwnioZlf8')">
+      Surpresa 2
+    </button>
+
+    <button onclick="playVideo('https://www.youtube.com/embed/ued-U_bbRGk')">
+      Surpresa 3
+    </button>
+
+    <button onclick="playVideo('https://www.youtube.com/embed/bAgQHXhUN00')">
+      Surpresa 4
+    </button>
+  </div>
+
+  <iframe id="videoPlayer" src="" allowfullscreen></iframe>
+
+  <script>
+    function playVideo(link) {
+      document.getElementById('videoPlayer').src = link + '?autoplay=1';
+    }
+  </script>
+
+</body>
+</html>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Contato: <a href="mailto:micastrey@gmail.com">micastrey@gmail.com</a></p>
+    <p>&copy; 2025 Michelle Strey</p>
+  </footer>
+
+
+</body>
+</html>
